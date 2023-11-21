@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "unsplash_dl"
+version = "0.1.1"
+description = ""
+authors = ["Anton <anton@shuvalov.info>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+docopt = "^0.6.2"
+requests = "^2.31.0"
+tqdm = "^4.66.1"
+
+[tool.poetry.scripts]
+unsplash = "unsplash_dl.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
